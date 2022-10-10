@@ -1,2 +1,2 @@
 # Project-Portfolio
-This is a git repository committed to storing the source code of notable projects built by Von Breznev A. Mendres
+This git repository is used to store source codes of projects by Von Breznev A. Mendres
