@@ -1,0 +1,46 @@
+body, html {
+    text-align: center;
+    margin: 0;
+    font-family: 'courier new';     
+    background-color: lightblue;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+    background: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+a {
+    color: black;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
+
+.same-height {
+    height: 35px;
+}
