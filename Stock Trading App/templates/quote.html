@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block title %}Quote{% endblock %} {% block main
+%}
+<form action="/quote" method="POST">
+  <h4 class="computerize">ENTER STOCK SYMBOL</h4>
+  <br />
+  <input
+    type="text"
+    name="symbol"
+    placeholder="Stock Symbol"
+    autocomplete="off"
+    autofocus
+    class="form-control mx-auto w-auto"
+  />
+  <br />
+  <button type="submit" class="btn btn-primary">Quote</button>
+</form>
+{% endblock %}

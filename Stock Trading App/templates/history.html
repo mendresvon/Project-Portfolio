@@ -1,0 +1,23 @@
+{% extends "layout.html" %} {% block title %}History{% endblock %} {% block main %}
+<div class="eighty">
+    <table class="computerize padding table table-striped">
+      <thead>
+        <tr>
+          <th class="text-start"><h5><b>Symbol</b></h5></th>
+          <th class="text-mid"><h5><b>Shares</b></h5></th>
+          <th class="text-mid"><h5><b>Price</b></h5></th>
+          <th class="text-end"><h5><b>Transacted</b></h5></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in table %}
+          <tr>
+            {% for element in row %}
+              <td>{{ row[element] }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %} {% block title %}Portfolio{% endblock %} {% block
+main %}
+<div class="eighty">
+  <table class="computerize padding table table-striped">
+    <thead>
+      <tr>
+        <th>
+          <h5><b>Symbol</b></h5>
+        </th>
+        <th>
+          <h5><b>Name</b></h5>
+        </th>
+        <th>
+          <h5><b>Shares</b></h5>
+        </th>
+        <th>
+          <h5><b>Price</b></h5>
+        </th>
+        <th>
+          <h5><b>Total</b></h5>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in table %}
+      <tr>
+        <td>{{ row['stock_symbol'] }}</td>
+        <td>{{ row['stock_name'] }}</td>
+        <td>{{ row['shares'] }}</td>
+        <td>{{ row['price'] }}</td>
+        <td>{{ row['total'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><b>Cash</b></td>
+        <td>{{ cash }}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><b>TOTAL</b></td>
+        <td>{{ total }}</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{% endblock %}
