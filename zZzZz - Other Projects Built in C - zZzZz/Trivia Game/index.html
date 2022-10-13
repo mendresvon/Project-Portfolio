@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            <!-- TODO: Add code to check answers to questions-->
+            document.addEventListener('DOMContentLoaded', function(){
+
+                // When correct button is clicked
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                // When incorrect button is clicked
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++)
+                {
+                    incorrects[i].addEventListener('click', function(){
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorreect';
+                    });
+                }
+
+                // Check free response question
+                document.querySelector('#check').addEventListener('click', function(){
+                    let answer = document.querySelector('#answer');
+                    if (answer.value === '69')
+                    {
+                        answer.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    }
+                    else
+                    {
+                        answer.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Who is the current president of Taiwan?</h3>
+                <input name="a" class="incorrect" type="submit" value="President Rodrigo Duterte">
+                <input name="b" class="incorrect" type="submit" value="President Kim Jong Un">
+                <input name="c" class="correct" type="submit" value="President Tsai Ing-wen">
+                <input name="d" class="incorrect" type="submit" value="President Vladimir Putin">
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is 34 + 35?</h3>
+                <input id="answer" type="text"/><input id="check" type="submit" value="Check Answer">
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>

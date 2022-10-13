@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles1.css">
+    <title>A Survey About Donuts</title>
+  </head>
+  <body>
+    <header class='centered'>
+      <h1 id='title'>A Survey About Donuts</h1>
+      <p id='description' class='closer-above'><em>Thank you for your trash opinions</em></p>
+    </header>
+    <div>
+      <form id='survey-form'>
+        <label id='name-label' class='label'>Name</label>
+        <input id='name' class='textbox' type='text' placeholder='Enter your name' required>
+
+        <label id='email-label' class='label'>Email</label>
+        <input id='email' class='textbox' type='email' placeholder='Enter your Email' required>
+
+        <label id='number-label' class='label'>Donut Meter(1-10)</label>
+        <input id='number' class='textbox' type='number' placeholder='How much you love donuts' min='0' max='10' required>
+
+        <label class='label'>Which option best describes your current role?</label>
+        <select id='dropdown' class='textbox' required>
+          <option value='Student'>Student</option>
+          <option value='Full-time'>Full Time Job</option>
+          <option value='Part-time'>Part Time Job</option>
+          <option value='Palamunin'>Palamunin</option>
+          <option value='Student'>Prefer not to say</option>
+        </select>
+
+        <p class='label marginless'>Which brand do you prefer</p>
+        <label class='textbox closer-above'>
+          <input type='radio' name='brand' value='Krispy Kreme' required>Krispy Kreme
+        </label>
+        <label class='textbox'>
+          <input type='radio' name='brand' value='J.CO' required>J.CO Donuts
+        </label>
+
+        <p class='label marginless'>Type of Donuts you like</p>
+        <label class='textbox closer-above'>
+          <input type='checkbox' value='Holed' required>Holed
+        </label>
+        <label class='textbox'>
+          <input type='checkbox' value='Holeless' required>Holeless
+        </label>
+
+        <label class='label' id='reasons' required>What do you love about donuts?</label>
+        <textarea class='textarea margin' placeholder='Enter your ideas here...'></textarea>
+
+        <input type='submit' id='submit' class='textbox'>
+        <label class='textbox'></label>
+
+      </form>
+    </div>
+  </body>
+  <body>

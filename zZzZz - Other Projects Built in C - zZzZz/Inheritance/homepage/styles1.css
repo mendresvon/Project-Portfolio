@@ -1,0 +1,66 @@
+.centered{
+    text-align: center;
+  }
+
+  .closer-above{
+    margin-top: -20px;
+  }
+
+  body{
+    font-family: 'courier new';
+    background: #eeeeee;
+  }
+
+  h1{
+    font-size: 38;
+  }
+
+  div{
+    width: 80%;
+    max-width: 800px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .label{
+    font-size: 18;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  .textbox{
+    display: block;
+    width: 95%;
+    font-family: 'courier new';
+    font-size: 100%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .marginless{
+    margin-top: 0;
+  }
+
+  .textarea{
+    display: block;
+    width: 95%;
+    height: 100px;
+    font-family: 'courier new';
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .margin{
+    margin-bottom: 40px;
+  }
+
+  #submit{
+    margin-top: 50px;
+  }
