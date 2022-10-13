@@ -9,7 +9,7 @@ This project is essentially a Caesar Cipher Program written in C.
 
 A Caesar cipher is used to encrypt confidential and secret messages by shifting every letter by some number of places.
 For example:
-  with a Caesar cipher with a key of one (1), would shift the message "abc" into "bcd", therefore moving the the letter by a place of one which is the "key".
+  A Caesar cipher with a key of one (1), would shift the message "abc" into "bcd", therefore moving the the letter by a place of one which is the "key".
   The receiver can then decode the encrypted message "bcd" back into "abc" if he knows the key that was used (which is one (1) in this case).
   That is why the encryption key of a caesar cipher message must be kept a secret!
  
